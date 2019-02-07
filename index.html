@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Mischa's Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="modal.css" />
+  <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Monoton|Noto+Sans+JP:400,500,700|Noto+Sans+KR:400,500,700|Nunito+Sans:400,400i,600,600i,700,800,800i|Oswald" rel="stylesheet">
+</head>
+<body>
+  <div class="grid-container">
+  <header>
+      <h1 id="title">Mischa Berlin</h1>
+  </header>
+  <aside class="nav-bar">
+    <ul>
+      <li id="about-me-nav" class="nav-item selected"><a class="nav-link" href="#about-me">about me</a></li>
+      <li id="portfolio-nav" class="nav-item"><a class="nav-link" href="#projects">projects</a></li>
+      <li  id="resume-nav" class="nav-item" ><a class="nav-link" href="#resume">resume</a></li>
+    </ul>
+  </aside>
+  <main class="content">
+    <section id="about-me">
+      <article class="about-me-grid-container">      
+        <h3 class="title">About me</h3>
+        <img id="selfie" src="https://i.ibb.co/grVs0fc/mischa-selfie.jpg" >
+        <p id="about-me-content">
+          <br/> <br/> 
+          I'm a fullstack developer, with a passion for well-crafted, logical code.
+          Before becoming a programmer, I worked as a teacher-educator, developing accessible math curriculum for early years students. 
+          Programing is, for me, a tool for bettering the world, by connecting people, and automating the mundane in order to free up time and energy for people to follow their passions.
+          I'm excited about all things Javascript. From node.js, to react.js, I love to build beautiful, mobile-ready, applications.
+          With an eye to social justice, and to education - in the broadest sense - I am following my dreams to do what I love, and to make the world a better place.
+          If you love programming, problem-solving, and puzzles, I'd love to chat! Contact me by <a href="mailto: mischarberlin@gmail.com" target="_blank">email</a> or find me on <a href="https://github.com/mischb" target="_blank">github</a>.
+          Thanks for visiting!
+        </p>
+      </article>
+    </section>
+    <section id="portfolio">
+      <article class='project-grid-container'>
+        <h3 class="title">Projects</h3>
+        <p class="project-description">
+          <b class="project-title">Flamingle</b><br/>
+          Flamingle is a dating app for those of us with severe social anxiety! 
+          Don't worry about running out of things to say, or questions to ask, because it comes preloaded with a set of fun, interesting and inspiring conversation starters! 
+          All you have to do is login and look to see if anyone is waiting for a date. If they are, hit the 'Join room!' and meet your date! 
+          If not, start a room and wait for someone to join! 
+          Once you're rolling, scroll through preloaded questions or just type something into the chat!
+          <!-- <p class='stack'> -->
+            <br/><b><b class='stack-title'>Stack</b><br/><b></b>
+            Front End with React.js and Redux</b><br/>
+            Flamingle combines an array of front-end javascript libraries.
+            
+            For rendering and displaying content we use React.js.
+            State management is handled with Redux, and login/registration forms with Redux-form.
+            Client-side updating uses server/data-base frequent polling.
+            Routing is handled with react-router-dom.
+            jQuery is used for forcing synchronous requests to the server - specifically, for logging user activity.
+            
+            <br/><b>Back End with Node.js, Express.js, MongoDB and Mongoose</b><br/>
+            Flamingle employs Node.js as the server-side runtime environment. 
+            Routing and middleware are handled by express.js 
+            Authentication is done with passport.js middleware, using JWT tokens in the local storage. Password encryption handled with bcrypt salted and hashed. 
+            All persistent data is stored and accessed on Mongodb on mlab.com. Mongoose is used for various CRUD operations on the db, and for organizing data with the use of schemas and models.
+          <!-- </p>         -->
+        </p>
+        <img id="flamingle-screenshot" class="screen-shot" src="https://i.ibb.co/1R7W11W/4-flamingling.png" alt="chat screen flamingle"> 
+        
+        <div id="myModal" class="modal">
+          <span id="close">&times;</span>
+          <img id="modal-screenshot" class="modal-content" />
+          <div id="caption"></div>
+        </div>
+      </article>
+    </section>
+    <section id="resume">
+      <h3 class="section-title">Resume</h3>
+      <p>Here's my resume</p>
+    </section>
+    
+  </main>
+  <footer>
+    <address>
+      Contact me by email <a href="mailto:mischarberlin@gmail.com" target="_blank">Mischa Berlin</a>
+    </address>
+  </footer>
+  </div>
+<script src="index.js"></script>
+</body>
+</html>
