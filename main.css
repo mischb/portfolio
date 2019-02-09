@@ -183,6 +183,9 @@ header .nav-spacer {
   .screen-shot {
     max-width: 600px;
   }
+  .contact {
+    margin-left: 0;
+  }
 }
 @media only screen and (max-width: 475px) {
   .navbar a,
