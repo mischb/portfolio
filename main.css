@@ -186,7 +186,6 @@ header .nav-spacer {
   .navbar a,
   .dropdown {
     margin-right: 0;
-    font-size: 1.4em;
   }
 }
 @media only screen and (max-width: 360px) {
