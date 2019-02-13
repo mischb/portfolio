@@ -31,6 +31,7 @@ header .nav-spacer {
   color: white;
   text-align: center;
   text-decoration: none;
+  padding: 8px;
 }
 
 
@@ -43,6 +44,7 @@ header .nav-spacer {
   color: white;
   background-color: inherit;
   font-family: inherit; 
+  padding: 8px;
 }
 
 /* Add a red background color to navbar links on hover */
