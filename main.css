@@ -133,8 +133,10 @@ header .nav-spacer {
   margin-top: 25px;
 }
 .screen-shot {
-  max-height: 100%;
-  max-width: 100%;
+ width: 100%;
+}
+.screen-shot:hover{
+  opacity: .8;
 }
 .subtitle {
   font-size: 1.5em;
@@ -191,19 +193,14 @@ footer {
     height: 100%;
     float: left;
   }
-  .screen-shot {
-    max-width: 600px;
-  }
+  /* .screen-shot {
+    width: 1;
+  } */
   .contact {
     margin-left: 0;
   }
 }
 @media only screen and (max-width: 515px) {
-  /* .dropdown,
-  .resume a {
-    margin-right: 10px;
-    padding: 14px 5px;
-  } */
   .dropdown-content a{
     padding-left: 10px;
   }
