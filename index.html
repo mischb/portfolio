@@ -8,29 +8,37 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
     />
+
     <link
-      href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Monoton|Noto+Sans+JP:400,500,700|Noto+Sans+KR:400,500,700|Nunito+Sans:400,400i,600,600i,700,800,800i|Oswald"
+      href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Monoton|Noto+Sans+JP:400,500,700|Noto+Sans+KR:400,500,700|Nunito+Sans:400,400i,600,600i,700,800,800i|Oswald:400,400i,600,600i,700,800,800i"
       rel="stylesheet"
     />
-    <link rel="icon" 
-      type="image/png" 
-      href="./images/favicon.png"/>
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
   </head>
   <body>
     <header>
       <nav class="navbar">
         <div class="nav-spacer">
           <a href="#about-me">About Me</a>
-          <a href="mischa_berlin_resume.pdf" download target="_blank">Resume</a>
+          <div class="resume">
+            <a href="mischa_berlin_resume.pdf" download target="_blank">
+              <button class="dropbtn">
+                Resume
+                <i class="fas fa-download"></i>
+              </button>
+            </a>
+          </div>
           <div class="dropdown">
             <button class="dropbtn">
               Projects
               <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
-              <a href="#gocery">Gocery</a>
+              <a href="#gocery">GoCery</a>
               <a href="#flamingle">Flamingle</a>
               <a href="#notes-shark">Notes Shark</a>
               <a href="#blockbreaker">Blockbreaker</a>
@@ -43,24 +51,29 @@
     <main class="content">
       <section id="about-me">
         <h1 id="title">Mischa Berlin</h1>
-        <h2 class="section-title">About me</h3>
-          <a href="https://i.ibb.co/grVs0fc/mischa-selfie.jpg" target="_blank">
-            <img id="selfie" alt="selfie" src="https://i.ibb.co/grVs0fc/mischa-selfie.jpg" />
-          </a>
+        <h2 class="section-title">About me</h2>
+        <a href="https://i.ibb.co/grVs0fc/mischa-selfie.jpg" target="_blank">
+          <img
+            id="selfie"
+            alt="selfie"
+            src="https://i.ibb.co/grVs0fc/mischa-selfie.jpg"
+          />
+        </a>
         <p id="about-me-content">
           I'm a fullstack developer, with a passion for well-crafted, logical
-          code. Before becoming a programmer, I worked as a teacher-educator,
-          developing accessible math curriculum for early years students.
-          Programing is, for me, a tool for bettering the world, by connecting
-          people, and automating the mundane in order to free up time and energy
-          for people to follow their passions. I'm excited about all things
-          Javascript. From node.js, to react.js, I love to build beautiful,
-          mobile-ready, applications. With an eye to social justice, and to
-          education - in the broadest sense - I am following my dreams to do
-          what I love, and to make the world a better place. If you love
-          programming, problem-solving, and puzzles, I'd love to chat! Contact
-          me by
-          <a href="mailto: mischarberlin@gmail.com" target="_blank">email</a>
+          code. I became a coder because I want to better the world by
+          connecting people and automating the mundane to allow people the time
+          to follow their passions. I'm excited about all things Javascript.
+          With React.js and Redux, I love to build responsive applications. With
+          Express, building fast and clean APIs is a breeze. With an eye to
+          social justice, and to education I am following my dreams to do what I
+          love, and to make the world a better place. If you love programming,
+          problem-solving, and puzzles, I'd love to chat! Contact me by
+          <a
+            href="mailto:mischarberlin@gmail.com?subject=Getting in touch"
+            target="_blank"
+            >email</a
+          >
           or find me on
           <a href="https://github.com/mischb" target="_blank">github</a>. Thanks
           for visiting!
@@ -68,30 +81,58 @@
       </section>
 
       <section id="gocery">
-          <h2 class="section-title">Projects</h3>
-          <h3  class="project-title">Gocery</h3>
-          <a href="images/goceryscreenshot.jpg"  target="_blank">
-            <img
-              class="screen-shot"
-              src="images/goceryscreenshot.jpg"
-              alt="left: finding a store. right: shopping list"
-            />
-          </a>
-          <p class="project-description">
-              GoCery helps shoppers spend less time in supermarkets by sorting shoppings lists based on crowd-sourced aisle information.
-          </p>
-          <h4 class="subtitle links">Links</h4>
-          <p class="project-description">
-            <a href="https://gocery-app.netlify.com/" target="_blank">Live App</a><br/>
-            <a href="https://github.com/thinkful-ei25/hiphip/" target="_blank">Front-end repo</a><br/>
-            <a href="https://github.com/thinkful-ei25/hiphip-server" target="_blank">Back-end repo</a><br/>
-          </p>
-        </article>
+        <h2 class="section-title">Projects</h2>
+        <h3 class="project-title">GoCery</h3>
+        <a href="images/goceryscreenshot.jpg" target="_blank">
+          <img
+            class="screen-shot"
+            src="images/goceryscreenshot.jpg"
+            alt="left: finding a store. right: shopping list"
+          />
+        </a>
+        <p class="project-description">
+          GoCery helps shoppers spend less time in supermarkets by sorting
+          shoppings lists based on crowd-sourced aisle information.
+        </p>
+        <div class="description-container">
+          <div class="details">
+            <h4 class="subtitle links">Links</h4>
+            <p class="project-description">
+              <a href="https://gocery-app.netlify.com/" target="_blank"
+                >Live App</a
+              ><br />
+              <a href="https://github.com/thinkful-ei25/hiphip/" target="_blank"
+                >Front-end repo</a
+              ><br />
+              <a
+                href="https://github.com/thinkful-ei25/hiphip-server"
+                target="_blank"
+                >Back-end repo</a
+              ><br />
+            </p>
+          </div>
+          <div class="details">
+            <h4 class="subtitle">Front-end Stack</h4>
+            <div>React (Create React App)</div>
+            <div>Redux</div>
+          </div>
+          <div class="details">
+            <h4 class="subtitle">Back-end Stack</h4>
+            <div>Node.js</div>
+            <div>Express</div>
+            <div>MongoDB</div>
+          </div>
+          <div class="details">
+            <h4 class="subtitle">Outside API</h4>
+            <div>Yelp</div>
+            <div>Google Maps</div>
+          </div>
+        </div>
       </section>
 
       <section id="flamingle">
-        <h3  class="project-title">Flamingle</h3>
-        <a href="images/flaminglescreenshot.png"  target="_blank">
+        <h3 class="project-title">Flamingle</h3>
+        <a href="images/flaminglescreenshot.png" target="_blank">
           <img
             class="screen-shot"
             src="images/flaminglescreenshot.png"
@@ -99,66 +140,147 @@
           />
         </a>
         <p class="project-description">
-          Flamingle connects you to random users via one-on-one chat and it comes
-          preloaded with questions to send to your partner, if things get awkward.
+          Flamingle connects you to random users via one-on-one chat and, if
+          things get awkward, it comes preloaded with questions to send to your
+          partner.
         </p>
-        <h4 class="subtitle links">Links</h4>
-        <p class="project-description">
-          <a href="https://www.flamingle.mischaberlin.com/" target="_blank">Live App</a><br/>
-          <a href="https://github.com/thinkful-ei25/chat-dating-app-mischa" target="_blank">Front-end repo</a><br/>
-          <a href="https://github.com/thinkful-ei25/chat-date-server-mischa" target="_blank">Back-end repo</a><br/>
-        </p>
+        <div class="description-container">
+          <div class="details">
+            <h4 class="subtitle links">Links</h4>
+            <p class="project-description">
+              <a href="https://www.flamingle.mischaberlin.com/" target="_blank"
+                >Live App</a
+              ><br />
+              <a
+                href="https://github.com/thinkful-ei25/chat-dating-app-mischa"
+                target="_blank"
+                >Front-end repo</a
+              ><br />
+              <a
+                href="https://github.com/thinkful-ei25/chat-date-server-mischa"
+                target="_blank"
+                >Back-end repo</a
+              ><br />
+            </p>
+          </div>
+          <div class="details">
+            <h4 class="subtitle">Front-end Stack</h4>
+            <div>React (Create React App)</div>
+            <div>Redux</div>
+            <div>Socket.io</div>
+          </div>
+          <div class="details">
+            <h4 class="subtitle">Back-end Stack</h4>
+            <div>Node.js</div>
+            <div>Express</div>
+            <div>MongoDB</div>
+          </div>
+        </div>
       </section>
 
       <section id="notes-shark">
-          <h3  class="project-title">Notes Shark</h3>
-          <a href="images/notesshark.png"  target="_blank">
-            <img
-              class="screen-shot"
-              src="images/notesshark.png"
-              alt="left: progress chart. right: correct answer"
-            />
-          </a>
-          <p class="project-description">
-              Notes Shark employs a spaced-repitition algorithm to help users memorize musical notation quickly and easily and associate sheet music with sounds.
-          </p>
-          <h4 class="subtitle links">Links</h4>
-          <p class="project-description">
-            <a href="https://knotes-client-sam.herokuapp.com/" target="_blank">Live App</a><br/>
-            <a href="https://github.com/thinkful-ei25/knotes-client-sam-allister-mischa/" target="_blank">Front-end repo</a><br/>
-            <a href="https://github.com/thinkful-ei25/knotes-client-sam-allister-mischa" target="_blank">Back-end repo</a><br/>
-          </p>
-        </article>
+        <h3 class="project-title">Notes Shark</h3>
+        <a href="images/notesshark.png" target="_blank">
+          <img
+            class="screen-shot"
+            src="images/notesshark.png"
+            alt="left: progress chart. right: correct answer"
+          />
+        </a>
+        <p class="project-description">
+          Notes Shark employs a spaced-repitition algorithm to help users
+          memorize musical notation quickly and easily and associate sheet music
+          with sounds.
+        </p>
+        <div class="description-container">
+          <div class="details">
+            <h4 class="subtitle links">Links</h4>
+            <p class="project-description">
+              <a href="https://knotes-client-sam.herokuapp.com/" target="_blank"
+                >Live App</a
+              ><br />
+              <a
+                href="https://github.com/thinkful-ei25/knotes-client-sam-allister-mischa/"
+                target="_blank"
+                >Front-end repo</a
+              ><br />
+              <a
+                href="https://github.com/thinkful-ei25/knotes-client-sam-allister-mischa"
+                target="_blank"
+                >Back-end repo</a
+              ><br />
+            </p>
+          </div>
+          <div class="details">
+            <h4 class="subtitle">Front-end Stack</h4>
+            <div>React (Create React App)</div>
+            <div>Redux</div>
+          </div>
+          <div class="details">
+            <h4 class="subtitle">Back-end Stack</h4>
+            <div>Node.js</div>
+            <div>Express</div>
+            <div>MongoDB</div>
+          </div>
+        </div>
       </section>
 
       <section id="blockbreaker">
-          <h3  class="project-title">Blockbreaker</h3>
-          <a href="https://camo.githubusercontent.com/45d96c469e679f1f7520d7ae9443227821ec9026/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f746f63587a61564e77494432546f79486e412f67697068792e676966"  target="_blank">
-            <img
-              class="screen-shot"
-              src="https://camo.githubusercontent.com/45d96c469e679f1f7520d7ae9443227821ec9026/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f746f63587a61564e77494432546f79486e412f67697068792e676966"
-              alt="block breaker gameplay"
-            />
-          </a>
-          <p class="project-description">
-            A take on the classic arcade game. Built in Python on the PyGame library. 
-          </p>
-          <h4 class="subtitle links">Links</h4>
-          <p class="project-description">
-            <a href="https://github.com/mischb/blockbreaker" target="_blank">Repo</a><br/>
-          </p>
-        </section>
+        <h3 class="project-title">Blockbreaker</h3>
+        <a
+          href="https://camo.githubusercontent.com/45d96c469e679f1f7520d7ae9443227821ec9026/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f746f63587a61564e77494432546f79486e412f67697068792e676966"
+          target="_blank"
+        >
+          <img
+            class="screen-shot"
+            src="https://camo.githubusercontent.com/45d96c469e679f1f7520d7ae9443227821ec9026/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f746f63587a61564e77494432546f79486e412f67697068792e676966"
+            alt="block breaker gameplay"
+          />
+        </a>
+        <p class="project-description">
+          A take on the classic arcade game. Built in Python on the PyGame
+          library.
+        </p>
+        <div class="description-container">
+          <div class="details">
+            <h4 class="subtitle links">Links</h4>
+            <p class="project-description">
+              <a href="https://github.com/mischb/blockbreaker" target="_blank"
+                >Repo</a
+              ><br />
+            </p>
+          </div>
+          <div class="details">
+            <h4 class="subtitle">Stack</h4>
+            <div>PyGame</div>
+          </div>
+          <div class="details"></div>
+        </div>
+      </section>
     </main>
     <footer>
       <div id="contact" class="footer-spacer">
-        <div class="contact">
-          <a class="contact" href="mailto:mischarberlin@gmail.com" target="_blank">mischarberlin@gmail.com</a>
+        <div class="contact-container">
+          <a
+            class="contact"
+            href="mailto:mischarberlin@gmail.com?subject=Getting in touch"
+            target="_blank"
+            ><i class="fas fa-envelope"></i
+          ></a>
         </div>
-        <div class="contact">
-          <a class="contact" href="https://github.com/mischb" target="_blank">Github</a>
+        <div class="contact-container">
+          <a class="contact" href="https://github.com/mischb" target="_blank"
+            ><i class="fab fa-github-square"></i>
+          </a>
         </div>
-        <div class="contact">
-          <a  class="contact"href="https://linkedin.com/in/mischa-berlin" target="_blank">LinkedIn</a>
+        <div class="contact-container">
+          <a
+            class="contact"
+            href="https://linkedin.com/in/mischa-berlin"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin"></i
+          ></a>
         </div>
       </div>
     </footer>
