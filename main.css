@@ -209,12 +209,11 @@ footer {
   }
 }
 @media only screen and (max-width: 515px) {
-  .navbar a,
-  .dropdown,
+  /* .dropdown,
   .resume a {
     margin-right: 10px;
     padding: 14px 5px;
-  }
+  } */
   .dropdown-content a{
     padding-left: 10px;
   }
