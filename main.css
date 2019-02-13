@@ -232,6 +232,9 @@ footer {
   .description-container {
     flex-flow: column;
   }
+  #blockbreaker .description-container{
+    flex-flow: row;
+  }
   .description-container .details {
     margin-top: 30px;
   }
