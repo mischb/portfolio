@@ -11,6 +11,7 @@ body * {
 /* Navbar container */
 header .nav-spacer {
   display: flex;
+  height: 40px;
   align-items: center;
   justify-content: space-evenly;
   max-width: 800px;
@@ -21,6 +22,7 @@ header .nav-spacer {
   position: fixed;
   top: 0;
   width: 100%;
+  
 }
 
 /* Links inside the navbar */
@@ -28,19 +30,18 @@ header .nav-spacer {
   font-size: 16px;
   color: white;
   text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
 }
 
 /* The dropdown container */
-.dropdown {
+/* .dropdown {
   float: left;
   overflow: hidden;
-}
-.navbar a,
+} */
+/* .navbar a,
 .dropdown {
   margin-right: 30px;
-}
+} */
 
 /* Dropdown button */
 .dropdown .dropbtn,
@@ -49,10 +50,9 @@ header .nav-spacer {
   border: none;
   outline: none;
   color: white;
-  padding: 14px 16px;
   background-color: inherit;
   font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
+  /* Important for vertical align on mobile phones */
 }
 
 /* Add a red background color to navbar links on hover */
@@ -249,7 +249,7 @@ footer {
   .navbar a,
   .resume a {
     margin-right: 0;
-    padding: 14px 5px;
+    /* padding: 14px 5px; */
   }
   .resume a {
     padding-left: 0;
