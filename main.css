@@ -109,6 +109,7 @@ header .nav-spacer {
   margin-bottom: 5px;
   background-color: rgba(0, 0, 0, 0.09);
   border-radius: 15px 15px 0 0;
+  font-variant: small-caps;
 }
 #about-me-content {
   font-size: 1.5em;
@@ -117,6 +118,10 @@ header .nav-spacer {
   border-radius: 0 0 15px 15px;
   padding: 30px;
   margin-top: 0;
+}
+#about-me-conent > span {
+  padding: 10px;
+  text-align: left;
 }
 #selfie {
   float: right;
@@ -135,6 +140,7 @@ header .nav-spacer {
 }
 .project-title {
   text-align: center;
+  font-variant: small-caps;
   font-weight: 800;
   margin-top: 10px;
   font-size: 2em;
