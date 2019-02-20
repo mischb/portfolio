@@ -112,17 +112,12 @@ header .nav-spacer {
   font-variant: small-caps;
 }
 #about-me-content {
-  hyphens: auto;
   font-size: 1.5em;
-  text-align: justify;
   background-color: rgba(0, 0, 0, 0.09);
   border-radius: 0 0 15px 15px;
   padding: 30px;
   margin-top: 0;
-}
-#about-me-conent > span {
-  padding: 10px;
-  text-align: left;
+  text-justify: distribute;
 }
 #selfie {
   float: right;
@@ -217,9 +212,6 @@ footer {
     height: 100%;
     float: left;
   }
-  /* .screen-shot {
-    width: 1;
-  } */
   .contact {
     margin-left: 0;
   }
@@ -230,6 +222,9 @@ footer {
   }
 }
 @media only screen and (max-width: 525px) {
+  #about-me-content {
+    hyphens: auto;
+  }
   .dropdown-content a {
     padding-left: 10px;
   }
