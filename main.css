@@ -146,6 +146,12 @@ header .nav-spacer {
 .screen-shot {
   width: 100%;
 }
+
+.video-screenshot {
+  display: flex;
+  justify-content: center;
+}
+
 .screen-shot:hover {
   opacity: 0.8;
 }
@@ -235,7 +241,8 @@ footer {
   .description-container {
     flex-flow: column;
   }
-  #blockbreaker .description-container {
+  #blockbreaker .description-container,
+  #swipe-deck .description-container {
     flex-flow: row;
   }
   .description-container .details {
