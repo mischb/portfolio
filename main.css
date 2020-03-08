@@ -1,7 +1,6 @@
 body {
   margin: 0;
   background-color: rgba(215, 114, 132, 0.2);
-  opacity: 10%;
 }
 body * {
   box-sizing: border-box;
